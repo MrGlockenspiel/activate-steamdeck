@@ -1,12 +1,15 @@
+import subprocess
+
 class Plugin:
-    # A normal method. It can be called from JavaScript using call_plugin_function("method_1", argument1, argument2)
-    async def method_1(self, *args):
-        pass
+    # this is horrendous
+    async def enable(self):
+        subprocess.Popen(["gcc", "activate-steamdeck.c", "-o", "activate-steamdeck", "-lX11", "-lXfixes", "-lXinerama", "-lcairo", "-I/usr/include/cairo"])
+        subprocess.Popen(["./activate-steamdeck"])
 
-    # A normal method. It can be called from JavaScript using call_plugin_function("method_2", argument1, argument2)
-    async def method_2(self, *args):
-        pass
+    # just when you thought it couldnt get worse
+    async def disable(self):
+        subprocess.Popen(["pkill", "-9", "activate-steamdeck"])
 
-    # Asyncio-compatible long-running code, executed in a task when the plugin is loaded
+    # ran on plugin load
     async def _main(self):
         pass

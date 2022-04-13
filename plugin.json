@@ -1,6 +1,6 @@
 {
-    "name": "Plugin name",
-    "author": "Plugin author",
+    "name": "activate-steamdeck",
+    "author": "MrGlockenspiel",
     "main_view_html": "main_view.html",
     "tile_view_html": "",
     "flags": ["_hot_reload", "_root"]
