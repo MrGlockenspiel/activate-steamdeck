@@ -2,6 +2,6 @@
     "name": "activate-steamdeck",
     "author": "MrGlockenspiel",
     "main_view_html": "main_view.html",
-    "tile_view_html": "",
+    "tile_view_html": "tile_view.html",
     "flags": ["_hot_reload", "_root"]
 }

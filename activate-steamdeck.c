@@ -69,12 +69,8 @@ int main(int argc, char *argv[]) {
         title = argv[1];
 	    subtitle = argv[2];
         scale = atof(argv[3]);
-        if(){
-            printf("More than needed arguments have been passed. This program only supports at most 3 arguments.\n");
-	        return 1;    
-        }
         break;
-
+        
 	default:
 	    printf("More than needed arguments have been passed. This program only supports at most 3 arguments.\n");
 	    return 1;
